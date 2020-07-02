@@ -129,7 +129,6 @@ before_install:
   - export PROJ_LIB=$GDALINST/gdal-$GDALVERSION/share/proj
   - gdal-config --version
   - $GDALINST/gdal-$GDALVERSION/bin/gdal-config --version
-  - python3 -m pip wheel -r requirements-dev.txt
   - python3 -m pip install -r requirements-dev.txt
   - python3 -m pip install coveralls>=1.1 --upgrade
 
